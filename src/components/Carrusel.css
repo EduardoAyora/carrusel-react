@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  heigth: 100%;
+  position: relative;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button.right {
+  right: 0;
+}
+
+.button.left {
+  left: 0;
+}

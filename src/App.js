@@ -1,25 +1,70 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Carrusel from './components/Carrusel'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css'
+
+class App extends Component {
+  render() {
+    return (
+      <div className='app-container'>
+        <Carrusel
+          childComponents={[
+            <ExampleComponentOne />,
+            <ExampleComponentTwo />,
+            <ExampleComponentThree />,
+          ]}
+        />
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
+
+class ExampleComponentOne extends Component {
+  render() {
+    return (
+      <div>
+        <ul>
+          <li>One</li>
+          <li>One</li>
+          <li>One</li>
+          <li>One</li>
+          <li>One</li>
+        </ul>
+      </div>
+    )
+  }
+}
+
+class ExampleComponentTwo extends Component {
+  render() {
+    return (
+      <div>
+        <ul>
+          <li>Two</li>
+          <li>Two</li>
+          <li>Two</li>
+          <li>Two</li>
+          <li>Two</li>
+        </ul>
+      </div>
+    )
+  }
+}
+
+class ExampleComponentThree extends Component {
+  render() {
+    return (
+      <div>
+        <ul>
+          <li>Three</li>
+          <li>Three</li>
+          <li>Three</li>
+          <li>Three</li>
+          <li>Three</li>
+        </ul>
+      </div>
+    )
+  }
+}
