@@ -24,15 +24,40 @@ export default App
 class ExampleComponentOne extends Component {
   render() {
     return (
-      <div>
-        <ul>
-          <li>One</li>
-          <li>One</li>
-          <li>One</li>
-          <li>One</li>
-          <li>One</li>
-        </ul>
-      </div>
+      <form className='form'>
+        <legend>Componente de Ejemplo Formulario</legend>
+        <label>Enter your full name</label>
+        <br />
+        <input type='text' name='name' />
+        <br />
+        <label>Enter your email</label>
+        <br />
+        <input type='email' name='email' />
+        <br />
+        <label>Enter your password</label>
+        <br />
+        <input type='password' name='pass' />
+        <br />
+        <label>confirm your password</label>
+        <br />
+        <input type='password' name='pass' />
+        <br />
+        <br />
+        <label>Enter your gender</label>
+        <br />
+        <input type='radio' id='gender' name='gender' value='male' />
+        Male <br />
+        <input type='radio' id='gender' name='gender' value='female' />
+        Female <br />
+        <input type='radio' id='gender' name='gender' value='others' />
+        others <br />
+        <br />
+        Enter your Address:
+        <br />
+        <textarea></textarea>
+        <br />
+        <input type='submit' value='sign-up' />
+      </form>
     )
   }
 }
@@ -40,14 +65,16 @@ class ExampleComponentOne extends Component {
 class ExampleComponentTwo extends Component {
   render() {
     return (
-      <div>
-        <ul>
-          <li>Two</li>
-          <li>Two</li>
-          <li>Two</li>
-          <li>Two</li>
-          <li>Two</li>
-        </ul>
+      <div style={{ minHeight: '100px' }}>
+        <div
+          style={{
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <img className='image' alt='aves' src='/images/ave.jpg' />
+        </div>
       </div>
     )
   }
@@ -56,7 +83,7 @@ class ExampleComponentTwo extends Component {
 class ExampleComponentThree extends Component {
   render() {
     return (
-      <div>
+      <div style={{ padding: '0 6rem' }}>
         <ul>
           <li>Three</li>
           <li>Three</li>
