@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Carrusel from './components/Carrusel'
 
 import './App.css'
+import BotonContador from './components/BotonContador'
 
 class App extends Component {
   state = {
@@ -49,6 +50,9 @@ class App extends Component {
         >
           Quitar componente funcional a carrusel
         </button>
+        <div>
+          <BotonContador />
+        </div>
       </div>
     )
   }
